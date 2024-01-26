@@ -1,0 +1,20 @@
+* { color: white; }
+.left { justify-content: flex-start !important; }
+.right { justify-content: flex-end !important; }
+.custom-menu, .btn-custom button { border: none; }
+
+.fa-brands {
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.fa-brands:hover {
+    transform: scale(1.25);
+    transition: transform 0.3s;
+}
+
+@media only screen and (max-width: 768px) {
+    .left, .right {
+        justify-content: center !important;
+    }
+}

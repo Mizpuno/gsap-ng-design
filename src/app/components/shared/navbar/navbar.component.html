@@ -1,0 +1,29 @@
+<div nz-row class="custom-flex container-lg p-0">
+    <div class="left order-1" nz-col nzXs="12" nzSm="12" nzMd="5" nzLg="5" nzXl="5">
+        <p class="m-0">Sample Username</p>
+    </div>
+    <div class="order-3 order-md-2" nz-col nzXs="24" nzSm="24" nzMd="14" nzLg="14" nzXl="14">
+        <ul nz-menu nzMode="horizontal" [ngClass]="'custom-menu'">
+            <li nz-menu-item nzSelected>Home</li>
+            <li nz-submenu nzTitle="Exhibition">
+                <ul>
+                    <li nz-menu-item>Concert</li>
+                    <li nz-menu-item>Congregration</li>
+                    <li nz-menu-item>Lifestyle & Travel</li>
+                    <li nz-menu-item>People</li>
+                </ul>
+            </li>
+            <li nz-menu-item>About Me</li>
+            <li nz-menu-item>Contact</li>
+        </ul>
+    </div>
+    <div [ngClass]="'btn-custom right order-2 order-md-3'" nz-row nz-col nzXs="12" nzSm="12" nzMd="5" nzLg="5" nzXl="5">
+        <button 
+            nz-button nzShape="circle"
+            *ngFor="let icon of iconPackages"
+            class="mx-2"
+        >
+            <i class="{{icon.class}}" style="color: #ffffff;" ></i>
+        </button>
+    </div>
+</div>
