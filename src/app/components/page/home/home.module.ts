@@ -5,16 +5,23 @@ import { HomeRoutes } from "./home-routing.module";
 
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 
+import { CarouselModule } from 'primeng/carousel';
+import { ExhibitionShowComponent } from './exhibition-show/exhibition-show.component';
+
 @NgModule({
     declarations: [
-        HomeComponent
+        HomeComponent,
+        ExhibitionShowComponent
     ],
     imports: [
         CommonModule,
         HomeRoutes,
 
         // Ng-Zorro modules.
-        NzLayoutModule
+        NzLayoutModule,
+
+        // PrimeNG modules.
+        CarouselModule
     ]
 })
 

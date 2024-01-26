@@ -1,0 +1,5 @@
+<p-carousel [value]="showcaseModel" [numVisible]="3" [numScroll]="1" [responsiveOptions]="responsiveOptions">
+    <ng-template let-item pTemplate="item">
+        <div style="background: green; text-align: center; border: 2px solid red;">{{item}}</div>
+    </ng-template>
+</p-carousel>

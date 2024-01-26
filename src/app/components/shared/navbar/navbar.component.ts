@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,11 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.less'
 })
 export class NavbarComponent {
-  iconPackages = [
-    { class: 'fa-brands fa-instagram fa-xl' },
-    { class: 'fa-brands fa-square-twitter fa-xl' },
-    { class: 'fa-brands fa-square-facebook fa-xl' }
-  ]
-
-  constructor() {}
+  @Input() iconsPackage: any[] = []
 }

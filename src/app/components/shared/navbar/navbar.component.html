@@ -17,11 +17,11 @@
             <li nz-menu-item>Contact</li>
         </ul>
     </div>
-    <div [ngClass]="'btn-custom right order-2 order-md-3'" nz-row nz-col nzXs="12" nzSm="12" nzMd="5" nzLg="5" nzXl="5">
+    <div [ngClass]="'right btn-custom order-2 order-md-3'" nz-row nz-col nzXs="12" nzSm="12" nzMd="5" nzLg="5" nzXl="5">
         <button 
             nz-button nzShape="circle"
-            *ngFor="let icon of iconPackages"
-            class="mx-2"
+            *ngFor="let icon of iconsPackage"
+            class="mx-1"
         >
             <i class="{{icon.class}}" style="color: #ffffff;" ></i>
         </button>

@@ -1,5 +1,15 @@
 <div nz-row class="custom-flex container-lg p-0">
-    <div nz-col>
-        test
+    <div nz-col class="left" nzXs="24" nzSm="24" nzMd="12" nzLg="12" nzXl="12">
+        <button
+            nz-button nzShape="circle"
+            *ngFor="let icon of iconsPackage"
+            class="mx-1"
+        >
+            <i class="{{icon.class}}" style="color: #ffffff"></i>
+        </button>
+        <span class="ps-2">Some of text or content here.</span>
+    </div>
+    <div nz-col class="right pe-3" nzXs="24" nzSm="24" nzMd="12" nzLg="12" nzXl="12">
+        <span>Copyright © 2024 - By Mizpuno Codex</span>
     </div>
 </div>
